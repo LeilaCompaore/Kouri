@@ -1,0 +1,24 @@
+{
+  "name": "kouri",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node . app.js",
+    "nodemon": "nodemon ./app.js -e js,njk"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "hapi": "^13.5.0",
+    "inert": "^4.0.1",
+    "jquery": "^3.1.0",
+    "mysql": "^2.11.1",
+    "nunjucks": "^2.4.2",
+    "nunjucks-append": "0.0.3",
+    "nunjucks-hapi": "^2.1.0",
+    "semantic-ui": "^2.2.2",
+    "vision": "^4.1.0"
+  }
+}

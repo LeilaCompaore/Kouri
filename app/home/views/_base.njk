@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+{% block head %}
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+
+    {% block stylesheet %}
+        <link rel="stylesheet" type="text/css" href="/node_modules/semantic-ui/dist/semantic.min.css">
+        <link rel="stylesheet" type="text/css" href="/static/scss/home/signup.css">
+        {#<link rel="stylesheet" type="text/css" href="../../../static/scss/homepage.css">#}
+    {% endblock %}
+{% endblock %}
+
+<body>
+{% block header %}
+    {% include "partials/_header.njk" %}
+{% endblock %}
+
+{% block content %}
+{% endblock %}
+
+{% block footer %}
+    {% include "partials/_footer.njk" %}
+{% endblock %}
+</body>
+</html>
+
+{% block script %}
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/node_modules/semantic-ui/dist/semantic.min.js"></script>
+{% endblock %}

@@ -1,0 +1,48 @@
+{% extends "_base.njk" %}
+{#<link rel="stylesheet" type="text/css" href="/static/scss/home/signup.css">#}
+
+{% block content %}
+<div>
+    <div class="ui two column centered grid">
+        <div class="row">
+            <div class="column centered">
+                <h1>Welcome to Kouri</h1>
+            </div>
+        </div>
+
+        <div class="ui text container">
+            <div class="ui segments">
+                <div class="roww">
+                    {#<form action="http://localhost:8000/dashboard" method="POST">#}
+                    <form>
+                        <fieldset>
+                            <span>
+                            <input class="balloon" id="state" type="text" placeholder="Ada" /><label for="nom">Nom</label>
+                        </span>
+                            <span>
+                            <input class="balloon" id="planet" type="text" placeholder="Leila" /><label for="prenom">Prenom</label>
+                        </span>
+                            <span>
+                            <input class="balloon" id="galaxy" type="text" placeholder="17" /><label for="age">Age</label>
+                        </span>
+                            <span>
+                            <input class="balloon" id="planet" type="text" placeholder="Burkina Faso" /><label for="pays">Pays</label>
+                        </span>
+                        </fieldset>
+
+                        <fieldset>
+                            <input type="submit" value="Submit">
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column centered">
+                <button>Create an account</button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
