@@ -1,5 +1,11 @@
+*{
+  font-family: 'Work Sans', sans-serif;
+}
 body{
-  background-image: url('/static/img/graduation.jpg');
+  background-image: url('/static/img/student.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  h1, a{
+    font-family: 'Work Sans', sans-serif!important;
+  }
 }

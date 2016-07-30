@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="/node_modules/semantic-ui/dist/semantic.min.css">
 <link rel="stylesheet" type="text/css" href="../../../static/scss/home/homepage.css">
 <head>
@@ -7,37 +8,36 @@
     <title>{{ title }}</title>
 </head>
 <body>
-<div class="content">
-    <div class="ui secondary pointing menu">
-        <a class="active item">
-            Home
-        </a>
-        <a class="item">
-            Messages
-        </a>
-        <a class="item">
-            Friends
-        </a>
-        <div class="right menu">
-            <a class="ui item">
-                Logout
-            </a>
+<div class="content container">
+    <div style="height: 55vh;">
+        <div class="ui container center aligned" style="background: rgba(255,255,255,.5); border-radius: 4px;">
+            <h1 class="ui header" style="margin-top: 5em; font-size: 4em;">Welcome to Kouri</h1>
+            <div class="ui huge primary buttons">
+                <a class="secondary ui button" href="/signup" style="margin: 2px"><i class="add user icon"></i>Sign up</a>
+                <a class="secondary ui button" href="/login" style="margin: 2px"><i class="sign in icon"></i>Log in</a>
+            </div>
         </div>
     </div>
 
-    <div class="ui two column centered grid">
-        <div class="row">
-            <div class="column centered">
-                <h1>Welcome to Kouri</h1>
+
+    {#bikini bottom#}
+    <div class="ui segment">
+        <div class="ui sticky" style="background-color: #ffffff;">
+            <div class="ui fluid eight item secondary menu">
+                <a class="active item">DAGE</a>
+                <a class="item">SHOWCAST</a>
+                <a class="item">WHERE ON EARTH</a>
+                <a class="item">CONNECT</a>
+                <a class="item">FAQ</a>
+                <a class="item">LEILA</a>
+                <a class="item">CONTACT</a>
             </div>
         </div>
-        <div class="row">
-            <div class="column centered">
-                <div class="ui large buttons">
-                    <a class="secondary basic ui button" href="/signup">Create an account</a>
-                    <div class="or"></div>
-                    <a class="secondary basic ui button" href="/login">Sign in</a>
-                </div>
+        <div class="ui active grid column" style="margin-top: 50px">
+            <div class="ui container">
+                <p>sdfjhgjkjlk;</p>
+                <p>sdfjhgjkjlk;</p>
+                <p>sdfjhgjkjlk;</p>
             </div>
         </div>
     </div>
@@ -46,4 +46,17 @@
 </body>
 <script src="/node_modules/jquery/dist/jquery.min.js"></script>
 <script src="/node_modules/semantic-ui/dist/semantic.min.js"></script>
+<script>
+    $('.ui.sticky')
+            .sticky()
+    ;
+</script>
 </html>
+
+
+
+
+{#<div class="ui inverted vertical masthead center aligned segment" style="height: 92vh;">#}
+    {#<div class="ui text container">#}
+        {#<h1 class="ui inverted header">Welcome to Kouri</h1>#}
+        {#<div class="ui huge primary button">Get Started <i class="right arrow icon"></i></div>#}
