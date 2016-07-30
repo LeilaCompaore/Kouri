@@ -1,6 +1,6 @@
 body {
-  background-image: url("/static/img/toronto.jpeg");
-  background-size: 100%;
+  background-image: url("/static/img/graduation.jpg");
+  background-size: cover;
   background-repeat: no-repeat; }
 
 /*# sourceMappingURL=homepage.css.map */

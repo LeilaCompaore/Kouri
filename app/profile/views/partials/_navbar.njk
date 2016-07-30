@@ -1,47 +1,56 @@
-<div class="ui visible left vertical inverted sidebar menu" style="overflow-y: visible!important;">
-    <div class="item">
-        <a href="/dashboard">
-            <img class="ui mini image" src="/static/img/graduation.jpg">
+{% block navbar %}
+    <div class="ui visible left vertical inverted sidebar menu" style="overflow-y: visible!important; border: none!important;">
+        <div class="item">
+            <a href="/">
+                <img class="ui medium circular image centered" src="/static/img/graduation.jpg">
+            </a>
+        </div>
+        <div class="item column centered ui grid">
+            <div class="row">
+                <i class="big link circular user icon"></i>
+                <i class="big link circular settings icon"></i>
+            </div>
+        </div>
+        <a class="item" href="/profile">
+            <i class="code icon"></i>
+            Profile
         </a>
-    </div>
-    <a class="item" href="/profile">
-        <i class="home icon"></i>
-        Profile
-    </a>
-    <div class="ui left pointing dropdown link item">
-        Admission
-        <i class="dropdown icon"></i>
-        <div class="menu">
-            <a class="item" href="/profile"><i class="edit icon"></i> Choisir son university</a>
-            <a class="item" href="/profile"><i class="globe icon"></i> Envoyer son dossier</a>
-            <a class="item" href="/profile"><i class="settings icon"></i> Test de langue</a>
-            <a class="item" href="/profile"><i class="settings icon"></i> Logement</a>
+        <div class="ui left pointing dropdown link item">
+            Admission
+            <i class="dropdown icon"></i>
+            <div class="menu">
+                <a class="item" href="/profile"><i class="edit icon"></i> Choisir son university</a>
+                <a class="item" href="/profile"><i class="globe icon"></i> Envoyer son dossier</a>
+                <a class="item" href="/profile"><i class="settings icon"></i> Test de langue</a>
+                <a class="item" href="/profile"><i class="settings icon"></i> Logement</a>
+            </div>
+        </div>
+        <a class="item" href="/profile">
+            <i class="travel icon"></i>
+            VISA
+        </a>
+        <a class="item" href="/profile">
+            <i class="checked calendar icon"></i>
+            Calendrier
+        </a>
+        <a class="item" href="/profile">
+            <i class="payment icon"></i>
+            Paiement
+        </a>
+        <div class="ui left pointing dropdown link item">
+            S'integrer
+            <i class="dropdown icon"></i>
+            <div class="menu">
+                <a class="item" href="/profile"><i class="edit icon"></i> Conseils</a>
+                <a class="item" href="/profile"><i class="globe icon"></i> Accueil a l'aeroport</a>
+                <a class="item" href="/profile"><i class="settings icon"></i> Sorties / Tourisme</a>
+                <a class="item" href="/profile"><i class="settings icon"></i> Sport</a>
+            </div>
+        </div>
+        <div class="item column centered ui grid">
+            <div class="row">
+                <i class=" big link sign out icon"></i>
+            </div>
         </div>
     </div>
-    <a class="item" href="/profile">
-        <i class="smile icon"></i>
-        VISA
-    </a>
-    <a class="item" href="/profile">
-        <i class="smile icon"></i>
-        Calendrier
-    </a>
-    <a class="item" href="/profile">
-        <i class="smile icon"></i>
-        Paiement
-    </a>
-    <div class="ui left pointing dropdown link item">
-        S'integrer
-        <i class="dropdown icon"></i>
-        <div class="menu">
-            <a class="item" href="/profile"><i class="edit icon"></i> Conseils</a>
-            <a class="item" href="/profile"><i class="globe icon"></i> Accueil a l'aeroport</a>
-            <a class="item" href="/profile"><i class="settings icon"></i> Sorties / Tourisme</a>
-            <a class="item" href="/profile"><i class="settings icon"></i> Sport</a>
-        </div>
-    </div>
-    <a class="item" href="/profile">
-        <i class="smile icon"></i>
-        Settings
-    </a>
-</div>
+{% endblock %}

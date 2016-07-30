@@ -1,13 +1,90 @@
 {% extends "_base.njk" %}
+{% block stylesheet %}
+    {{ super() }}
+    <link rel="stylesheet" type="text/css" href="/static/scss/profile/dashboard.css">
+{% endblock %}
 
 {% block content %}
-<div class="pusher ui container" id="content">
-    <div class="ui basic segment">
-        <h1 class="ui header">{{ title }}</h1>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
+<div class="pusher" id="content">
+    <div class="ui" id="inside">
+        <div class="ui basic segment">
+            <h1 class="ui header huge">{{ title|upper }}</h1>
+            <div class="ui container" style="  margin-left: 0!important;">
+                <div class="ui stacked segment">
+                    <h1 class="header">Bonjour Sara</h1>
+                </div>
+                <div class="ui stacked segment">
+                    <h1 class="header">Status</h1>
+                    <p>Votre demande d'admission a ete postee</p>
+                    <h1>Notes</h1>
+                    <p>** **</p>
+                    <h1>On va ou?</h1>
+                    <div class="ui three stackable cards">
+                        <div class="card">
+                            <div class="image">
+                                <img src="/static/img/Canada.jpeg">
+                            </div>
+                            <div class="content">
+                                <a class="header">Canada</a>
+                                <div class="description">
+                                    Canada eh!
+                                </div>
+                            </div>
+                            <div class="extra content">
+                                <a>
+                                    <i class="plane icon"></i>
+                                    Decouvrir
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="image">
+                                <img src="/static/img/switzerland.jpeg">
+                            </div>
+                            <div class="content">
+                                <a class="header">Suisse</a>
+                                <div class="description">
+                                    Geneva. Lausanne. and more
+                                </div>
+                            </div>
+                            <div class="extra content">
+                                <a>
+                                    <i class="plane icon"></i>
+                                    Decouvrir
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="image">
+                                <img src="/static/img/timesquare.jpg">
+                            </div>
+                            <div class="content">
+                                <a class="header">USA</a>
+                                <div class="description">
+                                    Time Square dude
+                                </div>
+                            </div>
+                            <div class="extra content">
+                                <a>
+                                    <i class="plane icon"></i>
+                                    Decouvrir
+                                </a>
+                            </div>
+                        </div>
+
+
+
+
+
+
+                <p>qqq</p>
+                <p>qqdrfvd</p>
+                <p>dgzfb</p>
+                <p>bcxe</p>
+            </div>
+        </div>
     </div>
 </div>
 {% endblock %}
