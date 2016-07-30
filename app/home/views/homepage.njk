@@ -22,9 +22,9 @@
 
     {#bikini bottom#}
     <div class="ui segment">
-        <div class="ui sticky" style="background-color: #ffffff;">
+        <div class="ui sticky">
             <div class="ui fluid eight item secondary menu">
-                <a class="active item">DAGE</a>
+                <a class="active item" href="/">KOURI</a>
                 <a class="item">SHOWCAST</a>
                 <a class="item">WHERE ON EARTH</a>
                 <a class="item">CONNECT</a>
@@ -35,28 +35,34 @@
         </div>
         <div class="ui active grid column" style="margin-top: 50px">
             <div class="ui container">
-                <p>sdfjhgjkjlk;</p>
-                <p>sdfjhgjkjlk;</p>
-                <p>sdfjhgjkjlk;</p>
+                {% block stats %}
+                    {% include "stats.njk"%}
+                {% endblock %}
+                {% block process %}
+                    {% include "process.njk"%}
+                {% endblock %}
             </div>
         </div>
     </div>
-
 </div>
 </body>
 <script src="/node_modules/jquery/dist/jquery.min.js"></script>
 <script src="/node_modules/semantic-ui/dist/semantic.min.js"></script>
 <script>
+    $('.visibilitySetup')
+        .visibility({
+            onTopVisible: function() {
+                $('.step')
+                    .transition({
+                        animation : 'slide up'
+                    })
+                ;
+            },
+        })
+    ;
+
     $('.ui.sticky')
             .sticky()
     ;
 </script>
 </html>
-
-
-
-
-{#<div class="ui inverted vertical masthead center aligned segment" style="height: 92vh;">#}
-    {#<div class="ui text container">#}
-        {#<h1 class="ui inverted header">Welcome to Kouri</h1>#}
-        {#<div class="ui huge primary button">Get Started <i class="right arrow icon"></i></div>#}

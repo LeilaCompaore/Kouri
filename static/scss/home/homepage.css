@@ -1,11 +1,22 @@
-* {
-  font-family: 'Work Sans', sans-serif; }
-
 body {
   background-image: url("/static/img/student.jpg");
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  font-family: "Work Sans", sans-serif !important; }
   body h1, body a {
     font-family: "Work Sans", sans-serif !important; }
+
+.statistic .label, .statistic .value {
+  font-family: "Work Sans", sans-serif !important; }
+
+.custombody {
+  font-family: "Work Sans", sans-serif !important;
+  margin-bottom: 10em; }
+  .custombody h2 {
+    font-family: "Work Sans", sans-serif !important;
+    margin-bottom: 1em; }
+
+.ui.segment .ui.sticky {
+  background-color: #fff; }
 
 /*# sourceMappingURL=homepage.css.map */
