@@ -23,10 +23,28 @@ body{
     font-family: 'Work Sans', sans-serif!important;
     margin-bottom: 1em;
   }
+
+  .title{
+    font-family: 'Work Sans', sans-serif!important;
+    font-weight: 600;
+  }
 }
 
 .ui.segment{
+  margin: 0;
   .ui.sticky{
     background-color: #fff;
+    a{
+      font-weight: 600;
+    }
   }
+}
+.footer{
+  a{
+    color: #000000!important;
+  }
+}
+.ui.header{
+  font-size: 4em;
+  font-weight: 600;
 }

@@ -15,8 +15,22 @@ body {
   .custombody h2 {
     font-family: "Work Sans", sans-serif !important;
     margin-bottom: 1em; }
+  .custombody .title {
+    font-family: "Work Sans", sans-serif !important;
+    font-weight: 600; }
 
-.ui.segment .ui.sticky {
-  background-color: #fff; }
+.ui.segment {
+  margin: 0; }
+  .ui.segment .ui.sticky {
+    background-color: #fff; }
+    .ui.segment .ui.sticky a {
+      font-weight: 600; }
+
+.footer a {
+  color: #000000 !important; }
+
+.ui.header {
+  font-size: 4em;
+  font-weight: 600; }
 
 /*# sourceMappingURL=homepage.css.map */
