@@ -27,10 +27,14 @@ body {
       font-weight: 600; }
 
 .footer a {
-  color: #000000 !important; }
+  color: #000000 !important;
+  font-weight: 600; }
 
 .ui.header {
   font-size: 4em;
-  font-weight: 600; }
+  font-weight: 400 !important; }
+
+.ui.button {
+  font-weight: 400 !important; }
 
 /*# sourceMappingURL=homepage.css.map */

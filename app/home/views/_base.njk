@@ -5,6 +5,7 @@
     <title>{{ title }}</title>
 
     {% block stylesheet %}
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,600" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="/node_modules/semantic-ui/dist/semantic.min.css">
         <link rel="stylesheet" type="text/css" href="/static/scss/home/signup.css">
         {#<link rel="stylesheet" type="text/css" href="../../../static/scss/homepage.css">#}
@@ -12,16 +13,20 @@
 {% endblock %}
 
 <body>
-{% block header %}
-    {% include "partials/_header.njk" %}
-{% endblock %}
+    <div class="content container">
+        {% block header %}
+            {% include "partials/_header.njk" %}
+        {% endblock %}
 
-{% block content %}
-{% endblock %}
+        {% block content %}
+        {% endblock %}
 
-{% block footer %}
-    {% include "partials/_footer.njk" %}
-{% endblock %}
+        <div class="ui fixed bottom sticky">
+            {% block footer %}
+                {% include "partials/_footer.njk" %}
+            {% endblock %}
+        </div>
+    </div>
 </body>
 </html>
 

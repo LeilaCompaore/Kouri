@@ -1,48 +1,71 @@
 {% extends "_base.njk" %}
-{#<link rel="stylesheet" type="text/css" href="/static/scss/home/signup.css">#}
 
 {% block content %}
-<div>
-    <div class="ui two column centered grid">
-        <div class="row">
-            <div class="column centered">
-                <h1>Welcome to Kouri</h1>
-            </div>
-        </div>
-
-        <div class="ui text container">
-            <div class="ui segments">
-                <div class="roww">
-                    {#<form action="http://localhost:8000/dashboard" method="POST">#}
-                    <form>
-                        <fieldset>
-                            <span>
-                            <input class="balloon" id="state" type="text" placeholder="Ada" /><label for="nom">Nom</label>
-                        </span>
-                            <span>
-                            <input class="balloon" id="planet" type="text" placeholder="Leila" /><label for="prenom">Prenom</label>
-                        </span>
-                            <span>
-                            <input class="balloon" id="galaxy" type="text" placeholder="17" /><label for="age">Age</label>
-                        </span>
-                            <span>
-                            <input class="balloon" id="planet" type="text" placeholder="Burkina Faso" /><label for="pays">Pays</label>
-                        </span>
-                        </fieldset>
-
-                        <fieldset>
-                            <input type="submit" value="Submit">
-                        </fieldset>
+    <div class="ui grid centered three column">
+        <div class="column">
+            <div class="ui middle aligned center aligned grid">
+                <div class="column">
+                    <h2 class="ui teal image header">
+                        <img src="assets/images/logo.png" class="image">
+                        <div class="content">
+                            Log-in to your account
+                        </div>
+                    </h2>
+                    <form class="ui large form">
+                        <div class="ui segment grid two column">
+                            <div class="field column">
+                                <div class="ui icon">
+                                    <div class="ui transparent input">
+                                        <i class="user icon"></i>
+                                        <input type="text" name="nom" placeholder="Nom">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="field column">
+                                <div class="ui icon">
+                                    <div class="ui transparent input">
+                                        <i class="lock icon"></i>
+                                        <input type="text" name="prenom" placeholder="Prenom">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="field column">
+                                    <div class="ui icon">
+                                        <div class="ui transparent input">
+                                            <i class="user icon"></i>
+                                            <input type="text" name="email" placeholder="Addresse courielle">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="field column">
+                                <div class="ui icon">
+                                    <div class="ui transparent input">
+                                        <i class="lock icon"></i>
+                                        <input type="date" name="datenaissance" placeholder="Date de naissance">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="field column">
+                                <div class="ui radio checkbox">
+                                    <input type="radio" name="genre" value="femme">
+                                    <label>Femme</label>
+                                </div>&nbsp;
+                                <div class="ui radio checkbox">
+                                    <input type="radio" name="genre" value="homme">
+                                    <label>Homme</label>
+                                </div>
+                            </div>
+                            <button class="ui fluid large teal button" type="submit">Login</button>
+                        </div>
                     </form>
+
+                    <div class="ui message">
+                        New to us? <a href="#">Sign Up</a>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <div class="row">
-            <div class="column centered">
-                <button>Create an account</button>
-            </div>
-        </div>
     </div>
-</div>
 {% endblock %}
