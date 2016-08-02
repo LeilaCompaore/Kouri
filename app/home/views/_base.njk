@@ -6,7 +6,7 @@
 
     {% block stylesheet %}
         <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,600" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="/node_modules/semantic-ui/dist/semantic.min.css">
+        <link rel="stylesheet" type="text/css" href="/semantic/out/semantic.min.css">
         <link rel="stylesheet" type="text/css" href="/static/scss/home/signup.css">
         {#<link rel="stylesheet" type="text/css" href="../../../static/scss/homepage.css">#}
     {% endblock %}
@@ -32,5 +32,10 @@
 
 {% block script %}
     <script src="/node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="/node_modules/semantic-ui/dist/semantic.min.js"></script>
+    <script src="/semantic/out/semantic.min.js"></script>
+    <script>
+        $('select.dropdown, .ui.dropdown')
+                .dropdown()
+        ;
+    </script>
 {% endblock %}

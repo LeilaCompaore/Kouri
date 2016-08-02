@@ -61,6 +61,18 @@ server.register(require('inert'), function(err) {
         }
     });
 
+    server.route({
+        method : 'GET',
+        path : '/semantic/{path*}',
+        handler : {
+            directory : {
+                path : 'semantic',
+                listing : false,
+                index : true
+            }
+        }
+    });
+
 });
 
 var plugins = [
