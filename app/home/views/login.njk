@@ -2,14 +2,39 @@
 <link rel="stylesheet" type="text/css" href="/static/scss/home/login.css">
 
 {% block content %}
-<div>
-    <div class="ui two column centered grid">
-        <div class="row">
-            <div class="column centered">
-                <h1>Welcome to Kouri</h1>
+    <div class="ui grid centered three column">
+        <div class="column">
+            <div class="ui middle aligned center aligned grid">
+                <div class="column">
+                    <h2 class="ui brown image header">
+                        <img src="assets/images/logo.png" class="image">
+                        <div class="content">
+                            Connexion
+                        </div>
+                    </h2>
+
+                    <form class="ui form">
+                        <div class="field">
+                            <label>Email</label>
+                            <div class="field">
+                                <input type="email" name="email" placeholder="Addresse courielle">
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label>Mot de passe</label>
+                            <div class="field">
+                                <input type="password" name="password" placeholder="password">
+                            </div>
+                        </div>
+
+                        <div class="ui brown button" tabindex="0">Log in</div>
+                    </form>
+                    <div class="ui message">
+                        Vous avez deja un compte? <a href="/login">Connexion</a>
+                    </div>
+                </div>
             </div>
         </div>
-
     </div>
-</div>
 {% endblock %}

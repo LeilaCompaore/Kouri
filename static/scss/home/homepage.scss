@@ -45,7 +45,9 @@ body{
     font-weight: 600;
   }
 }
-.ui.header{
+h1.ui.header{
+  margin-top: 5em!important;
+  padding-top: .25em;
   font-size: 4em;
   font-weight: 400!important;
 }
