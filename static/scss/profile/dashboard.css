@@ -1,15 +1,24 @@
 * {
   font-family: 'Work Sans', sans-serif; }
 
-#content {
-  background-image: url("/static/img/sea2.jpeg") !important;
-  background-size: cover;
-  width: auto !important; }
-  #content h1 {
-    font-family: 'Work Sans', sans-serif; }
+#content h1 {
+  font-family: 'Work Sans', sans-serif; }
 
-#inside {
-  background: rgba(255, 255, 255, 0.5);
-  height: 100vh; }
+.ui.container {
+  margin-left: 0 !important; }
+
+.ui.pushable {
+  background-color: #c0c0c0; }
+
+.ui.three.column .column div {
+  width: 95%;
+  margin: 0 auto;
+  background-color: #FFF;
+  border-radius: .5em;
+  min-height: 10em; }
+  .ui.three.column .column div h1 {
+    text-align: center; }
+  .ui.three.column .column div p {
+    margin-left: 1em; }
 
 /*# sourceMappingURL=dashboard.css.map */

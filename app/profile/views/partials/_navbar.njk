@@ -1,57 +1,121 @@
 {% block navbar %}
-    <div class="ui visible left vertical inverted sidebar menu" style="overflow-y: visible!important; border: none!important;">
-        <div class="item">
-            <a href="/dashboard">
+    <div class="ui visible left vertical sidebar menu">
+        <div class="item img">
+            <a class="item">
                 <img class="ui medium circular image centered" src="/static/img/graduation.jpg">
             </a>
         </div>
-        <div class="item column centered ui grid">
-            <div class="row">
-                <i class="big link circular user icon"></i>
-                <i class="big link circular settings icon"></i>
-            </div>
-        </div>
-        <a class="item" href="/profile">
-            <i class="code icon"></i>
-            Profile
-        </a>
-        <div class="ui left pointing dropdown link item">
-            Admission
-            <i class="dropdown icon"></i>
+        {#<div class="item icons">#}
+            {#<a><i class="icon big talk outline"></i></a>#}
+            {#<a><i class="icon big alarm outline"></i></a>#}
+        {#</div>#}
+        <div class="item">
+            <div class="header"><i class="icon user"></i>Profile</div>
             <div class="menu">
-                <a class="item" href="/profile"><i class="edit icon"></i> Choisir son university</a>
-                <a class="item" href="/profile"><i class="globe icon"></i> Envoyer son dossier</a>
-                <a class="item" href="/profile"><i class="settings icon"></i> Test de langue</a>
-                <a class="item" href="/profile"><i class="settings icon"></i> Logement</a>
+                <a href="#" class="item">Choisir son university</a>
+                <a href="#" class="item">Envoyer son dossier</a>
+                <a href="#" class="item">Test de langue</a>
             </div>
         </div>
-        <a class="item" href="/profile">
-            <i class="travel icon"></i>
-            VISA
-        </a>
-        <a class="item" href="/profile">
-            <i class="checked calendar icon"></i>
-            Calendrier
-        </a>
-        <a class="item" href="/profile">
-            <i class="payment icon"></i>
-            Paiement
-        </a>
-        <div class="ui left pointing dropdown link item">
-            S'integrer
-            <i class="dropdown icon"></i>
+        <div class="item">
+            <div class="header"><i class="icon folder open"></i>Admission</div>
             <div class="menu">
-                <a class="item" href="/profile"><i class="edit icon"></i> Conseils</a>
-                <a class="item" href="/profile"><i class="globe icon"></i> Accueil a l'aeroport</a>
-                <a class="item" href="/profile"><i class="settings icon"></i> Sorties / Tourisme</a>
-                <a class="item" href="/profile"><i class="settings icon"></i> Sport</a>
+                <a href="/w" class="item">Choisir son university</a>
+                <a href="#" class="item">Envoyer son dossier</a>
+                <a href="#" class="item">Test de langue</a>
+                <a href="#" class="item">Logement</a>
+                <a href="#" class="item">VISA</a>
+                <a href="#" class="item">Calendrier</a>
             </div>
         </div>
-        <div class="item column centered ui grid">
-            <div class="row">
-                <a href="/"><i class=" big link sign out icon"></i></a>
-                {#<i class=" big link sign out icon"></i>#}
+        <div class="item">
+            <div class="header"><i class="icon thumbs up"></i>S'integrer</div>
+            <div class="menu">
+                <a href="#" class="item">Conseils</a>
+                <a href="#" class="item">Accueil a l'aeroport</a>
+                <a href="#" class="item">Sorties / Tourisme</a>
+                <a href="#" class="item">Sport</a>
             </div>
+        </div>
+        <div class="item">
+            <div class="header"><i class="icon payment"></i>Paiement</div>
+        </div>
+        <div class="item">
+            <div class="header"><i class=" big link sign out icon"></i></div>
         </div>
     </div>
+
+    {#<div class="item column centered ui grid">#}
+    {#<div class="row">#}
+    {#<a href="/"><i class=" big link sign out icon"></i></a>#}
+    {#<i class=" big link sign out icon"></i>#}
+    {#</div>#}
+    {#</div>#}
+
+
+
+
+
+
+
+
+
+
+
+    {#<div class="ui visible left vertical sidebar menu" style="overflow-y: visible!important; border: none!important;">#}
+        {#<div class="item">#}
+            {#<a href="/dashboard">#}
+                {#<img class="ui medium circular image centered" src="/static/img/graduation.jpg">#}
+            {#</a>#}
+        {#</div>#}
+        {#<div class="item column centered ui grid">#}
+            {#<div class="row">#}
+                {#<i class="big link circular user icon"></i>#}
+                {#<i class="big link circular settings icon"></i>#}
+            {#</div>#}
+        {#</div>#}
+        {#<a class="item" href="/profile">#}
+            {#<i class="code icon"></i>#}
+            {#Profile#}
+        {#</a>#}
+        {#<div class="ui left pointing dropdown link item">#}
+            {#Admission#}
+            {#<i class="dropdown icon"></i>#}
+            {#<div class="menu">#}
+                {#<a class="item" href="/profile"><i class="edit icon"></i> Choisir son university</a>#}
+                {#<a class="item" href="/profile"><i class="globe icon"></i> Envoyer son dossier</a>#}
+                {#<a class="item" href="/profile"><i class="settings icon"></i> Test de langue</a>#}
+                {#<a class="item" href="/profile"><i class="settings icon"></i> Logement</a>#}
+            {#</div>#}
+        {#</div>#}
+        {#<a class="item" href="/profile">#}
+            {#<i class="travel icon"></i>#}
+            {#VISA#}
+        {#</a>#}
+        {#<a class="item" href="/profile">#}
+            {#<i class="checked calendar icon"></i>#}
+            {#Calendrier#}
+        {#</a>#}
+        {#<a class="item" href="/profile">#}
+            {#<i class="payment icon"></i>#}
+            {#Paiement#}
+        {#</a>#}
+        {#<div class="ui left pointing dropdown link item">#}
+            {#S'integrer#}
+            {#<i class="dropdown icon"></i>#}
+            {#<div class="menu">#}
+                {#<a class="item" href="/profile"><i class="edit icon"></i> Conseils</a>#}
+                {#<a class="item" href="/profile"><i class="globe icon"></i> Accueil a l'aeroport</a>#}
+                {#<a class="item" href="/profile"><i class="settings icon"></i> Sorties / Tourisme</a>#}
+                {#<a class="item" href="/profile"><i class="settings icon"></i> Sport</a>#}
+            {#</div>#}
+        {#</div>#}
+        {#<div class="item column centered ui grid">#}
+            {#<div class="row">#}
+                {#<a href="/"><i class=" big link sign out icon"></i></a>#}
+                {#<i class=" big link sign out icon"></i>#}
+            {#</div>#}
+        {#</div>#}
+    {#</div>#}
+
 {% endblock %}

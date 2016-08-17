@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node . app.js",
     "nodemon": "nodemon ./app.js -e js,njk",
-    "gulpsemantic": "gulp --gulpfile semantic/gulpfile.js watch"
+    "gulp": "gulp",
+    "gulpsemantic": "gulp --gulpfile semantic/gulpfile.js build"
   },
   "author": "",
   "license": "ISC",
@@ -21,5 +22,10 @@
     "nunjucks-hapi": "^2.1.0",
     "semantic-ui": "^2.2.2",
     "vision": "^4.1.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-livereload": "^3.8.1",
+    "gulp-nodemon": "^2.1.0"
   }
 }

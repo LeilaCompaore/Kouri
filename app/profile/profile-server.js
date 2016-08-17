@@ -40,6 +40,18 @@ exports.register = function(server, options, next) {
         }
     ]);
 
+    server.route([
+        {
+            method : 'GET',
+            path : '/admission/choisiruniversites',
+            handler: function (request, reply) {
+                reply.view('profile', {
+                    'title': 'Profile'
+                });
+            }
+        }
+    ]);
+
     next();
 };
 

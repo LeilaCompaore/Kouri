@@ -2,6 +2,7 @@
 {% block stylesheet %}
     {{ super() }}
     <link rel="stylesheet" type="text/css" href="/static/scss/profile/dashboard.css">
+    <link rel="stylesheet" type="text/css" href="/static/scss/profile/navbar.css">
 {% endblock %}
 
 {% block content %}
@@ -9,9 +10,33 @@
     <div class="ui" id="inside">
         <div class="ui basic segment">
             <h1 class="ui header huge">{{ title|upper }}</h1>
-            <div class="ui container" style="  margin-left: 0!important;">
+            <div class="ui container">
                 <div class="ui stacked segment">
                     <h1 class="header">Bonjour Sara</h1>
+                </div>
+                <div class="ui grid stackable three column">
+                    <div class="column">
+                        <div>
+                            <h1 class="header">Status</h1>
+                            <p>
+                                Votre demande d'admission a ete postee
+                            </p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div>
+                            <h1 class="header">Messages</h1>
+                            <p>
+                                <b>admin:</b> Veuillez verifier votre compte
+                            </p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div>
+                            <h1 class="header">Notifications</h1>
+                            <p>Vous avez un paiement a effectuer</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="ui stacked segment">
                     <h1 class="header">Status</h1>

@@ -1,0 +1,17 @@
+* {
+  font-family: 'Work Sans', sans-serif; }
+
+.ui.vertical.menu {
+  background-color: #f2f2f2; }
+  .ui.vertical.menu .item:before {
+    width: 0; }
+  .ui.vertical.menu .item {
+    text-align: center; }
+  .ui.vertical.menu .img {
+    padding: 0;
+    margin: 1em; }
+    .ui.vertical.menu .img a.item {
+      padding: 0;
+      margin: auto; }
+
+/*# sourceMappingURL=navbar.css.map */
